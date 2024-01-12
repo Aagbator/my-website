@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --background-color: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(var(--foreground-rgb));
+  /* background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+    background-color: rgb(var(--background-color));
+}
+
+@keyframes changeShape {
+  0% {
+    d: path("M156.27 28.1877C-84.9229 123.621 3.31798 328.453 89.5986 406.954C411.19 691.126 609.244 438.354 573.947 234.252C543.226 117.809 409.23 -71.9009 156.27 28.1877Z");
+  }
+  50% {
+    d: path("M156.29 30.1877C-84.9229 133.621 10.31798 338.453 99.5986 408.954C411.19 691.126 599.244 430.354 563.947 234.252C533.226 117.809 380.23 -61.9009 136.27 38.1877Z");
+  }
+  100% {
+    d: path("M156.27 28.1877C-84.9229 123.621 3.31798 328.453 89.5986 406.954C411.19 691.126 609.244 438.354 573.947 234.252C543.226 117.809 409.23 -71.9009 156.27 28.1877Z");
+  }
+}
+
+.hero-bg path {
+  fill: url(#pattern);
+  height: 100%;
+  background-image: url(http://www.horizonchampion.eu/themes/projectbase/images/bg.svg);
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
+  vector-effect: non-scaling-stroke;
+  animation: changeShape 4s infinite alternate;
+}
+
+.isMobile {
+  @apply sm:hidden;
+}
