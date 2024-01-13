@@ -5,13 +5,13 @@ import { Polygon } from "./polygon";
 export const Hero = () => {
   return (
     <section className="relative">
-      <section className="flex flex-col sm:flex-row justify-between align-top items-start w-full py-5 px-10 sm:px-20">
+      <section className="flex flex-col sm:flex-row justify-between align-top items-start w-full py-5 px-5 sm:px-10">
         <div className="flex flex-col mt-20">
-          <h1 className="flex flex-col text-gray-900 uppercase font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
+          <h1 className="flex flex-col text-gray-900 uppercase font-bold text-6xl md:text-7xl lg:text-8xl">
             <span>Agbator</span>
             <span>Anthony</span>
           </h1>
-          <h4 className="text-gray-900 uppercase text-xl md:text-2xl lg:text-4xl mt-5">
+          <h4 className="text-gray-900 font-medium uppercase text-2xl md:text-2xl lg:text-4xl mt-5">
             Full-Stack Developer <br />& Product Designer.
           </h4>
         </div>
@@ -48,16 +48,16 @@ export const Hero = () => {
         </div>
       </section>
 
-      <div className="flex justify-between align-top items-start w-full lg:w-1/2 py-5 px-10 sm:px-20">
+      <div className="flex justify-between align-top items-start w-full lg:w-1/2 py-5 px-5 sm:px-10">
         <p className="text-gray-800">
-          I’m a design-first Full-stack Developer with strong focus on creating
+          I’m a design-first Full-stack developer with strong focus on creating
           high quality user interface and product experience.
         </p>
       </div>
 
       <Polygon isMobile={true} top={5} left={2} rotate={0} />
       <Polygon isMobile={false} top={14} left={38} rotate={70} />
-      <Polygon color="#ff0000" isMobile={true} top={18} left={15} rotate={70} />
+      <Polygon color="#ffae00" isMobile={true} top={18} left={15} rotate={70} />
     </section>
   );
 };
