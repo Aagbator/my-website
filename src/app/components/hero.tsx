@@ -11,7 +11,7 @@ export const Hero = () => {
             <span>Agbator</span>
             <span>Anthony</span>
           </h1>
-          <h4 className="text-gray-900 uppercase text-2xl lg:text-4xl mt-5">
+          <h4 className="text-gray-900 uppercase text-xl md:text-2xl lg:text-4xl mt-5">
             Full-Stack Developer <br />& Product Designer.
           </h4>
         </div>
