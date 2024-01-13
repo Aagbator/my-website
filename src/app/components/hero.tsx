@@ -7,11 +7,11 @@ export const Hero = () => {
     <section className="relative">
       <section className="flex flex-col sm:flex-row justify-between align-top items-start w-full py-5 px-10 sm:px-20">
         <div className="flex flex-col mt-20">
-          <h1 className="flex flex-col text-gray-900 uppercase font-bold text-7xl lg:text-8xl">
+          <h1 className="flex flex-col text-gray-900 uppercase font-bold text-6xl md:text-7xl lg:text-8xl">
             <span>Agbator</span>
             <span>Anthony</span>
           </h1>
-          <h4 className="text-gray-900 uppercase text-2xl sm:text-4xl mt-5">
+          <h4 className="text-gray-900 uppercase text-2xl lg:text-4xl mt-5">
             Full-Stack Developer <br />& Product Designer.
           </h4>
         </div>
@@ -57,7 +57,7 @@ export const Hero = () => {
 
       <Polygon isMobile={true} top={5} left={2} rotate={0} />
       <Polygon isMobile={false} top={14} left={38} rotate={70} />
-      <Polygon color="#ff0000" isMobile={true} top={18} left={25} rotate={70} />
+      <Polygon color="#ff0000" isMobile={true} top={18} left={22} rotate={70} />
     </section>
   );
 };
