@@ -132,7 +132,7 @@ export const Skills = () => {
       <section className="flex flex-col sm:flex-row justify-between align-top items-start w-full sm:py-5 sm:px-10">
         <div className="flex flex-col mt-5 sm:w-6/12 w-full">
           {ratings.map(({ title, percent }, i) => (
-            <RatingBar title={title} percent={percent} />
+            <RatingBar key={i} title={title} percent={percent} />
           ))}
         </div>
         <div className="lg:flex lg:pr-20 flex-col items-start text-black sm:w-5/12 ">
