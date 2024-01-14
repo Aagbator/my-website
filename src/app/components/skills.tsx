@@ -11,6 +11,7 @@ import {
   Legend,
 } from "chart.js";
 import { Radar } from "react-chartjs-2";
+import { IRating, RatingBar } from "./rating-bar";
 
 ChartJS.register(
   RadialLinearScale,
@@ -41,21 +42,6 @@ const data = {
 };
 
 const chartOptions = {
-  // scales: {
-  //   xAxes: [
-  //     {
-  //       ticks: {
-  //         display: false,
-  //       },
-  //     },
-  //   ],
-  //   x: {
-  //     display: false,
-  //   },
-  //   ticks: {
-  //     display: false, //this will remove only the label
-  //   },
-  // },
   plugins: {
     legend: {
       display: false, // This hides all text in the legend and also the labels.
@@ -102,6 +88,20 @@ const IconList = () => {
   );
 };
 
+const ratings: IRating[] = [
+  { title: "html", percent: 90 },
+  { title: "css / Scss", percent: 80 },
+  { title: "javascript", percent: 90 },
+  { title: "typescript", percent: 80 },
+  { title: "angular", percent: 80 },
+  { title: "react js", percent: 85 },
+  { title: "react native", percent: 70 },
+  { title: "node js", percent: 70 },
+  { title: "Jest/RTL", percent: 80 },
+  { title: "GRAPHQL", percent: 60 },
+  { title: "UI/UX", percent: 70 },
+];
+
 export const Skills = () => {
   return (
     <section className="py-20 px-5 sm:px-10">
@@ -111,7 +111,7 @@ export const Skills = () => {
           <h2 className="font-bold">Experience</h2>
         </div>
         <div className="flex sm:space-between w-full items-center">
-          <div className="sm:pl-40 w-4/12 sm:w-8/12">
+          <div className="sm:pl-40 w-4/12 sm:w-6/12">
             <div>
               <Image
                 src="/profile-img.png"
@@ -124,23 +124,35 @@ export const Skills = () => {
               </div>
             </div>
           </div>
-          <div className=" w-8/12 sm:w-4/12">
+          <div className=" w-8/12 sm:w-6/12">
             <Radar data={data} options={chartOptions} />
           </div>
         </div>
       </header>
-      {/* <section className="flex flex-col sm:flex-row justify-between align-top items-start w-full py-5 px-5 sm:px-10">
-        <div className="flex flex-col mt-20">
-          <h1 className="flex flex-col text-gray-900 uppercase font-bold text-6xl md:text-7xl lg:text-8xl">
-            <span>Agbator</span>
-            <span>Anthony</span>
-          </h1>
-          <h4 className="text-gray-900 font-medium uppercase text-2xl md:text-2xl lg:text-4xl mt-5">
-            Full-Stack Developer <br />& Product Designer.
-          </h4>
+      <section className="flex flex-col sm:flex-row justify-between align-top items-start w-full sm:py-5 sm:px-10">
+        <div className="flex flex-col mt-5 sm:w-6/12 w-full">
+          {ratings.map(({ title, percent }, i) => (
+            <RatingBar title={title} percent={percent} />
+          ))}
         </div>
-        <div className="lg:flex lg:pr-20 flex-col items-start text-black hero-bg hidden"></div>
-      </section> */}
+        <div className="lg:flex lg:pr-20 flex-col items-start text-black sm:w-5/12 ">
+          <h2 className="font-bold text-2xl mt-10 sm:mt-0 md:text-3xl lg:text-4xl mb-5">
+            A blend of <span className="gradient-text">Design</span> and{" "}
+            <span className="gradient-text">Engineering</span>.
+          </h2>
+          <p className="text-gray-700">
+            Leveraging my design background, I collaborate closely with
+            design-centric teams to create websites and microsites for both
+            companies and individuals. Over the years, I have gained extensive
+            experience working collaboratively within product teams.
+          </p>
+          <p className="mt-5 text-gray-700">
+            Drawing on my expertise in UI and product engineering, I address
+            product-related challenges and construct visually appealing,
+            user-friendly web experiences.
+          </p>
+        </div>
+      </section>
 
       {/* <div className="flex justify-between align-top items-start w-full lg:w-1/2 py-5 px-5 sm:px-10">
         <p className="text-gray-800">
