@@ -111,7 +111,7 @@ export const Skills = () => {
           <h2 className="font-bold">Experience</h2>
         </div>
         <div className="flex sm:space-between w-full items-center">
-          <div className="sm:pl-40 w-6/12 sm:w-8/12">
+          <div className="sm:pl-40 w-4/12 sm:w-8/12">
             <div>
               <Image
                 src="/profile-img.png"
@@ -124,7 +124,7 @@ export const Skills = () => {
               </div>
             </div>
           </div>
-          <div className=" w-6/12 sm:w-4/12">
+          <div className=" w-8/12 sm:w-4/12">
             <Radar data={data} options={chartOptions} />
           </div>
         </div>
