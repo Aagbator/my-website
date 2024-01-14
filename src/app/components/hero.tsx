@@ -15,7 +15,7 @@ export const Hero = () => {
             Full-Stack Developer <br />& Product Designer.
           </h4>
         </div>
-        <div className="lg:flex flex-col items-start text-black hero-bg hidden">
+        <div className="lg:flex lg:pr-20 flex-col items-start text-black hero-bg hidden">
           <svg
             width="100%"
             height="534"

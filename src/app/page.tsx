@@ -2,12 +2,14 @@ import { Header } from "./components/header";
 import { Hero } from "./components/hero";
 import { FloatingSocials } from "./components/floating-socials";
 import { Polygon } from "./components/polygon";
+import { Skills } from "./components/skills";
 
 export default function Home() {
   return (
     <main className="min-h-screen items-center justify-between">
       <Header />
       <Hero />
+      <Skills />
 
       <FloatingSocials />
 
