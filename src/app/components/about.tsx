@@ -105,14 +105,23 @@ const ratings: IRating[] = [
 export const About = () => {
   return (
     <section className="pt-20 px-5 sm:px-10">
-      <section className="flex flex-col sm:flex-row justify-between align-top items-start w-full sm:py-5 sm:px-10">
-        <div className="flex flex-col mt-5 sm:w-6/12 w-full">
-          <h1>hello</h1>
+      <section className="flex flex-col sm:flex-row w-full sm:py-5 sm:px-10">
+        <div className="xs:flex flex-col sm:w-6/12 w-full hidden">
+          <div className="relative">
+            <div className="bg-orange-300 absolute w-full h-[500px] bottom-0 rounded-r-full top-0 -left-20"></div>
+            <Image
+              className="w-full z-1 absolute -left-20 top-14"
+              src="/anthony-img.png"
+              width={400}
+              height={200}
+              alt="Anthony Agbator"
+            />
+          </div>
         </div>
-        <div className="lg:flex lg:pr-20 flex-col items-start text-black sm:w-6/12 w-full">
+        <div className="lg:flex lg:pr-20 flex-col items-start text-black xs:w-6/12 w-full">
           <header className="w-full flex-1 col-12 sm:w-6/12 text-gray-900 uppercase mb-5 text-2xl md:text-2xl lg:text-4xl">
             <h5 className="text-black text-sm">Hobbies & Interest</h5>
-            <h2 className="font-bold">About Me</h2>
+            <h2 className="font-bold text-3xl">About Me</h2>
           </header>
           <p className="text-gray-700">
             I derive immense pleasure from engaging in a variety of hobbies,
@@ -123,18 +132,15 @@ export const About = () => {
           <p className="mt-5 text-gray-700">
             I derive immense pleasure from engaging in a variety of hobbies,
             including chess, art, gaming, football, reading, indulging in
-            culinary delights, and actively participating in charitable
-            initiatives.
+            culinary delights.
           </p>
+          <div className="flex flex-row space-x-2 w-full mt-5">
+            <div className="h-[150px] w-4/12 bg-pink-100"></div>
+            <div className="h-[150px] w-4/12 bg-yellow-100"></div>
+            <div className="h-[150px] w-4/12 bg-blue-100"></div>
+          </div>
         </div>
       </section>
-
-      {/* <div className="flex justify-between align-top items-start w-full lg:w-1/2 py-5 px-5 sm:px-10">
-        <p className="text-gray-800">
-          I’m a design-first Full-stack developer with strong focus on creating
-          high quality user interface and product experience.
-        </p>
-      </div> */}
     </section>
   );
 };

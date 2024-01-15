@@ -106,9 +106,9 @@ export const Skills = () => {
   return (
     <section className="pt-20 px-5 sm:px-10">
       <header className="flex flex-col sm:flex-row justify-between items-center w-full">
-        <div className="w-full flex-1 col-12 sm:w-6/12 text-gray-900 uppercase  text-2xl md:text-2xl lg:text-4xl">
+        <div className="w-full flex-1 col-12 sm:w-6/12 text-gray-900 uppercase  text-2xl">
           <h5 className="text-black text-sm">Skills & Expertise</h5>
-          <h2 className="font-bold">Experience</h2>
+          <h2 className="font-bold text-3xl">Experience</h2>
         </div>
         <div className="flex sm:space-between w-full items-center">
           <div className="sm:pl-40 w-4/12 sm:w-6/12">

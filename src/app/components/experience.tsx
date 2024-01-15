@@ -55,16 +55,16 @@ export const Experience = () => {
         ({ date, company, companyLogoPath, role, description, skills }, i) => (
           <section
             key={i}
-            className="flex flex-col sm:flex-row justify-between align-top items-start w-full sm:py-3 pb-5 sm:px-10"
+            className="flex flex-col md:flex-row justify-between align-top items-start w-full sm:py-3 pb-5 sm:px-10"
           >
-            <div className="hidden sm:flex sm:flex-row items-center mt-5 sm:w-2/12 w-6/12">
+            <div className="hidden md:flex md:flex-row items-center mt-5 md:w-2/12 w-6/12">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
               </span>
               <h5 className="text-gray-900 ml-2 font-semibold">2022 - Today</h5>
             </div>
-            <div className="flex mt-5 sm:w-4/12 w-12/12">
+            <div className="flex mt-5 md:w-4/12 w-12/12">
               <div className="flex flex-row">
                 <div>
                   <Image
@@ -90,7 +90,7 @@ export const Experience = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col mt-2 sm:mt-5 sm:w-6/12 w-full">
+            <div className="flex flex-col mt-2 md:mt-5 md:w-6/12 w-full">
               <p className="text-black pl-[70px] sm:pl-0">{description}</p>
               <div className="flex flex-wrap mt-2 pl-[70px] sm:pl-0">
                 {skills.map((skill, i) => (
