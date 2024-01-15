@@ -3,6 +3,7 @@ import { Hero } from "./components/hero";
 import { FloatingSocials } from "./components/floating-socials";
 import { Polygon } from "./components/polygon";
 import { Skills } from "./components/skills";
+import { Experience } from "./components/experience";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Skills />
+      <Experience />
 
       <FloatingSocials />
 

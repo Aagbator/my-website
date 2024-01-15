@@ -104,7 +104,7 @@ const ratings: IRating[] = [
 
 export const Skills = () => {
   return (
-    <section className="py-20 px-5 sm:px-10">
+    <section className="pt-20 px-5 sm:px-10">
       <header className="flex flex-col sm:flex-row justify-between items-center w-full">
         <div className="w-full flex-1 col-12 sm:w-6/12 text-gray-900 uppercase  text-2xl md:text-2xl lg:text-4xl">
           <h5 className="text-black text-sm">Skills & Expertise</h5>
