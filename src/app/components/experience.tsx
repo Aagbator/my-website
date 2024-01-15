@@ -8,6 +8,7 @@ interface IExperience {
   companyLogoPath: string;
   role: string;
   description: string;
+  skills: string[];
 }
 
 const experience: IExperience[] = [
@@ -18,6 +19,7 @@ const experience: IExperience[] = [
     role: "software engineer",
     description:
       "I collaborate closely with design-centric teams to create websites and microsites for both companies and individuals.",
+    skills: ["Html", "css", "Javascript", "Angular", "react"],
   },
   {
     date: "2022 - 2023",
@@ -26,6 +28,23 @@ const experience: IExperience[] = [
     role: "software engineer",
     description:
       "I collaborate closely with design-centric teams to create websites and microsites for both companies and individuals.",
+    skills: [
+      "Html",
+      "css",
+      "Javascript",
+      "Angular",
+      "react js",
+      "Html",
+      "css",
+      "Javascript",
+      "Angular",
+      "react js",
+      "Html",
+      "css",
+      "Javascript",
+      "Angular",
+      "react js",
+    ],
   },
 ];
 
@@ -33,7 +52,7 @@ export const Experience = () => {
   return (
     <section className="px-5 sm:px-10 mt-5">
       {experience.map(
-        ({ date, company, companyLogoPath, role, description }, i) => (
+        ({ date, company, companyLogoPath, role, description, skills }, i) => (
           <section
             key={i}
             className="flex flex-col sm:flex-row justify-between align-top items-start w-full sm:py-3 pb-5 sm:px-10"
@@ -71,6 +90,16 @@ export const Experience = () => {
             </div>
             <div className="flex flex-col mt-2 sm:mt-5 sm:w-6/12 w-full">
               <p className="text-black pl-[70px] sm:pl-0">{description}</p>
+              <div className="flex flex-wrap mt-2 pl-[70px] sm:pl-0">
+                {skills.map((skill, i) => (
+                  <span
+                    key={i}
+                    className="bg-purple-100 font-medium text-purple-600 px-2 mr-2 mt-2 text-xs rounded-md capitalize"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
           </section>
         )
