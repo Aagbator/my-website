@@ -83,8 +83,10 @@ export const Experience = () => {
                     </span>
                     <span className="text-gray-900 text-sm ml-1">{date}</span>
                   </div>
-                  <h2 className="font-semibold">{role}</h2>
-                  <h6>{company}</h6>
+                  <h2 className="text-gray-900 font-semibold capitalize">
+                    {role}
+                  </h2>
+                  <h6 className="capitalize text-gray-500 ">{company}</h6>
                 </div>
               </div>
             </div>
@@ -94,7 +96,7 @@ export const Experience = () => {
                 {skills.map((skill, i) => (
                   <span
                     key={i}
-                    className="bg-purple-100 font-medium text-purple-600 px-2 mr-2 mt-2 text-xs rounded-md capitalize"
+                    className="bg-purple-100 block font-medium text-purple-600 px-2 mr-1 mt-2 text-xs rounded-md capitalize"
                   >
                     {skill}
                   </span>

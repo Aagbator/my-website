@@ -4,6 +4,7 @@ import { FloatingSocials } from "./components/floating-socials";
 import { Polygon } from "./components/polygon";
 import { Skills } from "./components/skills";
 import { Experience } from "./components/experience";
+import { About } from "./components/about";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <Experience />
+      <About />
 
       <FloatingSocials />
 
