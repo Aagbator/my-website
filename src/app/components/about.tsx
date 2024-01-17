@@ -10,8 +10,8 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import { Radar } from "react-chartjs-2";
-import { IRating, RatingBar } from "./rating-bar";
+import { IRating } from "./rating-bar";
+import Link from "next/link";
 
 ChartJS.register(
   RadialLinearScale,
@@ -106,19 +106,19 @@ export const About = () => {
   return (
     <section className="pt-20 px-5 sm:px-10">
       <section className="flex flex-col sm:flex-row w-full sm:py-5 sm:px-10">
-        <div className="xs:flex flex-col sm:w-6/12 w-full hidden">
+        <div className="hidden sm:flex flex-col sm:w-6/12 w-full">
           <div className="relative">
             <div className="bg-orange-300 absolute w-full h-[500px] bottom-0 rounded-r-full top-0 -left-20"></div>
             <Image
               className="w-full z-1 absolute -left-20 top-14"
               src="/anthony-img.png"
               width={400}
-              height={200}
+              height={300}
               alt="Anthony Agbator"
             />
           </div>
         </div>
-        <div className="lg:flex lg:pr-20 flex-col items-start text-black xs:w-6/12 w-full">
+        <div className="lg:flex lg:pr-20 flex-col items-start text-black sm:w-6/12 w-full">
           <header className="w-full flex-1 col-12 sm:w-6/12 text-gray-900 uppercase mb-5 text-2xl md:text-2xl lg:text-4xl">
             <h5 className="text-black text-sm">Hobbies & Interest</h5>
             <h2 className="font-bold text-3xl">About Me</h2>
@@ -134,10 +134,22 @@ export const About = () => {
             including chess, art, gaming, football, reading, indulging in
             culinary delights.
           </p>
+          <p className="mt-5 text-gray-700">
+            In my leisure time, I read books, support my team Arsenal or play
+            chess on{" "}
+            <Link
+              className="underline font-semibold"
+              target="_blank"
+              href="https://www.chess.com/member/tonjoe99"
+            >
+              chess.com
+            </Link>
+          </p>
           <div className="flex flex-row space-x-2 w-full mt-5">
-            <div className="h-[150px] w-4/12 bg-pink-100"></div>
-            <div className="h-[150px] w-4/12 bg-yellow-100"></div>
-            <div className="h-[150px] w-4/12 bg-blue-100"></div>
+            <div className="h-[150px] w-6/12 sm:w-3/12 bg-pink-100 bg-[url('/bg-1.jpeg')] bg-center bg-cover"></div>
+            <div className="h-[150px] w-6/12 sm:w-3/12 bg-yellow-100 bg-[url('/bg-2.jpeg')] bg-center bg-cover"></div>
+            <div className="h-[150px] w-6/12 sm:w-3/12 bg-blue-100 bg-[url('/bg-3.jpeg')] bg-center bg-cover"></div>
+            <div className="h-[150px] w-6/12 sm:w-3/12 bg-blue-100 bg-[url('/bg-4.jpeg')] bg-center bg-cover"></div>
           </div>
         </div>
       </section>
