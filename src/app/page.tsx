@@ -6,6 +6,7 @@ import { Skills } from "./components/skills";
 import { Experience } from "./components/experience";
 import { About } from "./components/about";
 import { Works } from "./components/works";
+import { Footer } from "./components/footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
       <Experience />
       <About />
       <Works />
+      <Footer />
+
       <FloatingSocials />
 
       {/* <div className="z-10 max-w-2xl w-full items-center justify-between font-mono text-sm lg:flex">

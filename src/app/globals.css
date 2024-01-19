@@ -29,6 +29,10 @@ body {
     background-color: rgb(var(--background-color));
 }
 
+.footer-link {
+  @apply text-gray-700 capitalize font-bold mb-5 md:text-2xl lg:text-3xl;
+}
+
 @keyframes changeShape {
   0% {
     d: path("M156.27 28.1877C-84.9229 123.621 3.31798 328.453 89.5986 406.954C411.19 691.126 609.244 438.354 573.947 234.252C543.226 117.809 409.23 -71.9009 156.27 28.1877Z");

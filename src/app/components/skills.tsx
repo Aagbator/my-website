@@ -153,13 +153,6 @@ export const Skills = () => {
           </p>
         </div>
       </section>
-
-      {/* <div className="flex justify-between align-top items-start w-full lg:w-1/2 py-5 px-5 sm:px-10">
-        <p className="text-gray-800">
-          I’m a design-first Full-stack developer with strong focus on creating
-          high quality user interface and product experience.
-        </p>
-      </div> */}
     </section>
   );
 };

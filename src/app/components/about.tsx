@@ -70,23 +70,6 @@ const chartOptions = {
   },
 };
 
-const IconList = () => {
-  return (
-    <>
-      {Array(5)
-        .fill(null)
-        .map((_, index) => (
-          <Icon
-            key={index} // Make sure to include a unique key when dynamically generating components in a loop
-            className="text-yellow-400 block"
-            width={20}
-            height={20}
-            icon={`mingcute:star-fill`}
-          />
-        ))}
-    </>
-  );
-};
 
 const ratings: IRating[] = [
   { title: "html", percent: 90 },
