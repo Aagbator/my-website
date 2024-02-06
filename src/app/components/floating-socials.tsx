@@ -19,30 +19,30 @@ export const FloatingSocials = () => {
     },
     {
       name: "Youtube",
-      link: "",
+      link: "https://www.youtube.com/channel/UCi10T744ctNQK85_OaQFihg",
       icon: "mdi:youtube",
     },
     {
       name: "Instagram",
-      link: "",
+      link: "https://www.instagram.com/anthonyagbator",
       icon: "basil:instagram-solid",
     },
     {
       name: "Linkedin",
-      link: "",
+      link: "https://www.linkedin.com/in/anthony-agbator",
       icon: "ri:linkedin-fill",
     },
     {
       name: "Github",
-      link: "",
+      link: "https://github.com/aagbator",
       icon: "mdi:github",
     },
   ];
 
   return (
-    <section className="hidden sm:flex absolute right-5 top-1/3  flex-col space-y-4">
+    <section className="hidden sm:flex absolute right-5 top-[30vh]  flex-col space-y-4">
       {socials.map(({ icon, link }, i) => (
-        <Link key={i} href={link} className="text-gray-900">
+        <Link target="_blank" key={i} href={link} className="text-gray-900">
           <Icon className="text-gray-900" width={30} height={30} icon={icon} />
         </Link>
       ))}

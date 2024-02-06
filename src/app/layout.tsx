@@ -17,6 +17,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Design-first Full-stack developer specializing in creating high-quality user interfaces and product experiences. Proficient in HTML, CSS, JavaScript, TypeScript, React JS, Angular, Canvas, Styled Components, Node.js, GraphQL, Docker."
+        />
+        <meta
+          name="keywords"
+          content="Frontend developer, Full-stack developer, design-first, user interface, product experience, HTML, CSS, JavaScript, TypeScript, React JS, Angular, Canvas, Styled Components, Node.js, GraphQL, Docker"
+        />
+        <meta name="author" content="Anthony Agbator" />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet"

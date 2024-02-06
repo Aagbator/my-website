@@ -70,7 +70,6 @@ const chartOptions = {
   },
 };
 
-
 const ratings: IRating[] = [
   { title: "html", percent: 90 },
   { title: "css / Scss", percent: 80 },
@@ -111,11 +110,6 @@ export const About = () => {
             including chess, art, gaming, football, reading, indulging in
             culinary delights, and actively participating in charitable
             initiatives.
-          </p>
-          <p className="mt-5 text-gray-700">
-            I derive immense pleasure from engaging in a variety of hobbies,
-            including chess, art, gaming, football, reading, indulging in
-            culinary delights.
           </p>
           <p className="mt-5 text-gray-700">
             In my leisure time, I read books, support my team Arsenal or play

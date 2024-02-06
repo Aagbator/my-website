@@ -13,7 +13,7 @@ export const Header = () => {
       <h1 className="text-black font-extrabold text-5xl">AA.</h1>
       <button
         onClick={handleClick}
-        className="flex flex-col justify-center items-end"
+        className="flex hidden flex-col justify-center items-end"
       >
         <span
           className={`bg-black block transition-all duration-300 ease-out 

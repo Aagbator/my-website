@@ -11,7 +11,7 @@ import { Footer } from "./components/footer";
 export default function Home() {
   return (
     <main className="min-h-screen items-center justify-between">
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <Skills />
       <Experience />
